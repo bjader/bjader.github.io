@@ -12,7 +12,7 @@ $(document).ready(function() {
   }, {easing:"swing"});
 
   //handle menu clicks
-  $("ul#nav li a").click(function(){ //if a button in the navbar is clicked
+  $("ul#nav>li>a, #projectsInline").click(function(){ //if a button in the navbar is clicked
     var page = $(this).attr("href"); //take the href value (ie. about)
     //For the projects page remove the container constraints
     

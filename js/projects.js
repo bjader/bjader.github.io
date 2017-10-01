@@ -13,13 +13,13 @@ else {
 		var scroll_pos_test = 20;   
 		if(y_scroll_pos > scroll_pos_test && isOn==false) {
 
-			$('#nav').hide(500);
+			$('#nav').hide(200);
 			isOn = true;
 
 		}
 
 		if(y_scroll_pos < scroll_pos_test && isOn==true) {
-			$('#nav').show(500);
+			$('#nav').show(200);
 			isOn = false;
 		}
 	});

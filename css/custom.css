@@ -219,7 +219,7 @@ body {
   }
   /* Let menu still be visible */
   .portfolio {
-    margin-top: 100px;
+    margin-top: 200px;
   }
 }
 /* Regular computer screen */
@@ -245,6 +245,11 @@ body {
 
 .text-center {
   text-align: center;
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
 }
 
 
