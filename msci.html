@@ -5,15 +5,27 @@
 	<div class = "row project-title">
 		<div class="col-md-12">
 			<h1 style="color:#55acee">MSci Project</h1>
+			<a href="http://www.benjaderberg.com/BJ_Final_MSci_Thesis.pdf" target="_blank">Read the full thesis here</a> 
 		</div>
 	</div>
 	<hr class="border" style="margin-top:-20px">
 	<div class="row">
-		<div class = "col-md-12 project-text"> 
-			<p> I am currently teaching myself to code in C++ as part of my masters project, entitled "Entanglement Entropy of Fermions".
-			Fermions are a type of particle (e.g. an electron) and I am developing an algorithm to calculate the properties of two groups of fermions that exhibit <a>quantum entanglement</a>.</p>
-			<p> So far I have created a first implementation of the algorithm, which is built around a Markov chain Monte Carlo method. I am in the process of now testing the algorithm on a simple system, comparing it against the mathematical framework developed from traditional calculations. The pictures below show various expected scaling patterns for the entanglement entropy.</p>
-			<p> Once the algorithm is tested to work correctly, I am hoping to apply it to significantly more complex systems that cannot be solved analytically using traditional maths. Given that entanglement entropy has never been solved for such advanced systems before, I am hoping to  be able to publish my results at the end of my project (~ May 2017). </p>
+		<div class = "col-md-12"> 
+			<h1> Abstract</h1>
+		</div>
+		<div class = "col-md-12"> 
+			<p>
+				The Renyi entanglement entropy (S2) of a bipartite system is a measure of the entangle- ment between two groups of particles. We build, from scratch, a Markov chain Monte Carlo algorithm in C++ capable of calculating S2 for a given trial wave function. The algorithm is verified through analytic and numerical calculations on the free-fermion wave function and then applied to the Laughlin states that describe the quantum Hall effect. For the nominal filling fraction ν = 1 we construct a regime to extract the topological entanglement entropy γ and calculate its value to be γ = 0.0878 ± 0.018. Afterwards, we explore for what reasons this differs from the field theoretic value γ = 0 and suggest solutions to improve the accuracy of our results going forward. 
+			</p>
+		</div>
+	</div>
+	<hr class="border">
+	<div class="row">
+		<div class= "col-md-12 project-text">
+			<p> The entire program was written in C++, self-taught after coming from a Java background. The main algorithm comprises of ~ 200 lines that follow the procedure seen in the flowchart below.
+			</p>
+			<p> The large sets of data produced by the algorithm are written to file via helper methods. From here they are imported into Python for data analysis, with both 2d and 3d graphs generated using the <a href="https://matplotlib.org/" target="_blank">matplotlib</a> library.
+			<p> After graduating I have continued to work on this research, applying my improved computational techniques to extract the topological constant with increasing accuracy. As a result, I am proud to say the findings of my work are now close to publication, which will hopefully be available by the end of 2018</p>
 		</div>
 	</div>
 	<hr class="border">
