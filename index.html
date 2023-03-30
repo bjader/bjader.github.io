@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ben Jaderberg</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -34,12 +35,6 @@
             transition: opacity 2s ease;
         }
 
-        @media (max-width: 768px) {
-            .icon {
-                font-size: 100px;
-            }
-        }
-
         .icon:hover {
             color: #1abc9c;
         }
@@ -56,7 +51,22 @@
 
         #title {
             font-size: 60px;
-            margin-top: 10px;
+            margin-top: -10px;
+        }
+
+        @media (max-width: 768px) {
+            .icon {
+                font-size: 60px;
+            }
+            #name {
+                font-size: 50px;
+                text-align: center;
+            }
+            #title {
+                font-size: 30px;
+                text-align: center;
+                margin-top: -5px;
+            }
         }
 
     </style>
@@ -64,7 +74,7 @@
 
 <body>
 <div id="name">Ben Jaderberg</div>
-<div id="title" style="font-size: 5rem; margin-top:-0.25em">Quantum computing</div>
+<div id="title">Quantum computing</div>
 <div class="icons">
     <a href="https://www.linkedin.com/in/benjaderberg" target="_blank">
         <i id="linkedin" class="fa fa-linkedin-square icon"></i>
